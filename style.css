@@ -12,6 +12,9 @@ a {
 
 
 /* Main Styles */
+body {
+    background-color: hsl(257, 40%, 49%);
+}
 
 h1 {
     font-family: "Poppins", sans-serif;
@@ -26,7 +29,6 @@ h1 {
     height: 100vh;
     padding: 50px 100px;
     background: url(images/bg-desktop.svg) no-repeat;
-    background-color: hsl(257, 40%, 49%);
     background-size: contain;
     background-position: center;
 }
@@ -48,6 +50,7 @@ h1 {
 
 .pitch {
     width: 40%;
+    min-width: 375px;
     color: white;
     padding: 120px 0px;
 }
@@ -97,9 +100,50 @@ a.btn span {
     margin: 0px 3px;
 }
 
-
-
-
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* Media Queries */
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .container {
+        flex-flow: column;
+        padding: 50px 0px;
+        background: url(images/bg-mobile.svg) no-repeat top center;
+        background-size: contain;
+    }
+
+    .header img {
+        width: 35%;
+        height: auto;
+        margin-left: 30px;
+    }
+    
+    .pitch {
+        width: 100%;
+        color: white;
+        padding: 8px 0px;
+        text-align: center;
+    }
+
+    .mock-up {
+        width: 100%;
+    }
+
+    .mock-up img {
+        width: 100%;
+        height: auto;
+        padding: 60px 30px; 
+    }
+
+    .bottom {
+        justify-content: center;
+        padding-top: 90px;
+    }
+}
