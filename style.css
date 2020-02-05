@@ -3,12 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
-}
-
-html, 
-body {
-    width: 100%;
-    height: 100%;
+    box-sizing: border-box;
 }
 
 a {
@@ -21,28 +16,64 @@ a {
 
 h1 {
     font-family: "Poppins", sans-serif;
-    font-size: 36px;
+    font-size: 42px;
+    font-weight: 700;
 }
 
-#container {
+.container {
     display: flex;
     flex-flow: row wrap;
     font-family: "Open Sans", sans-serif;
-    width: 100%;
     height: 100vh;
-    padding: 60px;
+    padding: 50px 100px;
+    background: url(images/bg-desktop.svg) no-repeat;
     background-color: hsl(257, 40%, 49%);
-    background-image: url(images/bg-desktop.svg);
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
 }
 
 
 .header {
     width: 100%;
+    background-color: teal;
+}
+
+.mock-up {
+    background-color: olive;
+    width: 60%;
+}
+
+.mock-up img {
+    width: 100%;
+    height: auto;
+    padding-top: 60px; 
 }
 
 .pitch {
-    max-width: 500px;
+    width: 40%;
+    color: white;
+    background-color: paleturquoise;
+    padding: 120px 70px 0 70px;
+}
+
+.pitch p {
+    margin: 20px 0px 40px 0;
+    font-size: 19px;
+    line-height: 28px;
+}
+
+.pitch span {
+    background-color: white;
+    padding: 20px 75px;
+    border-radius: 35px;
+}
+
+a.btn span {
+    font-family: "Poppins", sans-serif;
+}
+
+.bottom {
+    width: 100%;
 }
 
 
