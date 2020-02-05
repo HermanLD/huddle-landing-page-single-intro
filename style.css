@@ -8,7 +8,6 @@
 
 a {
     text-decoration: none;
-    color: hsl(257, 40%, 49%);
 }
 
 
@@ -35,16 +34,14 @@ h1 {
 
 .header {
     width: 100%;
-    background-color: teal;
 }
 
 .mock-up {
-    background-color: olive;
     width: 60%;
 }
 
 .mock-up img {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding-top: 60px; 
 }
@@ -52,8 +49,7 @@ h1 {
 .pitch {
     width: 40%;
     color: white;
-    background-color: paleturquoise;
-    padding: 120px 70px 0 70px;
+    padding: 120px 80px 0px 0px;
 }
 
 .pitch p {
@@ -70,12 +66,26 @@ h1 {
 
 a.btn span {
     font-family: "Poppins", sans-serif;
+    color: hsl(257, 40%, 49%);
 }
 
 .bottom {
+    display: flex;
+    justify-content: end;
     width: 100%;
 }
 
+.contact-links i {
+    width: 14px;
+    margin: 10px auto;
+}
+
+.contact-links span {
+    color: white;
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
 
 
 
