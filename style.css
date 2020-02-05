@@ -49,7 +49,7 @@ h1 {
 .pitch {
     width: 40%;
     color: white;
-    padding: 120px 80px 0px 0px;
+    padding: 120px 0px;
 }
 
 .pitch p {
@@ -59,9 +59,18 @@ h1 {
 }
 
 .pitch span {
+    position: relative;
     background-color: white;
-    padding: 20px 75px;
+    padding: 15px 75px;
     border-radius: 35px;
+    -webkit-box-shadow: -1px 14px 32px -3px rgba(0,0,0,0.2);
+    -moz-box-shadow: -1px 14px 32px -3px rgba(0,0,0,0.2);
+    box-shadow: -1px 14px 32px -3px rgba(0,0,0,0.2);
+}
+
+.pitch span:hover {
+    background-color: rgb(219, 219, 219);
+    top: 1px;
 }
 
 a.btn span {
@@ -85,6 +94,7 @@ a.btn span {
     border: 2px solid white;
     border-radius: 100px;
     padding: 5px 10px;
+    margin: 0px 3px;
 }
 
 
